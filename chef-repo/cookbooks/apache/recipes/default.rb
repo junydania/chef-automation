@@ -13,7 +13,7 @@ elsif node['platform_family'] == 'debian'
 end
 
 package 'apache2' do
-	package_name 'package'
+	package_name package
 	action :install
 end
 
